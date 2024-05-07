@@ -66,7 +66,15 @@ function Square(props) {
         history: history.concat([{
           squares: squares
         }]),
+        stepNumber:0,
         xIsNext: !this.state.xIsNext,
+      });
+    }
+
+    jumpTo(step){
+      this.setState({
+        stepNumber:step,
+        xIsNext: (step % 2) === 0,
       });
     }
   
@@ -80,7 +88,7 @@ function Square(props) {
           'Go to move #' + move :
           'Go to game start';
         return (
-          <li>
+          <li key={move} >
             <button onClick={() => this.jumpTo(move)}>{desc}</button>
           </li>
         );
