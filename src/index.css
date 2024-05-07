@@ -1,7 +1,7 @@
 body {
   font-family: "Century Gothic", Futura, sans-serif;
   margin: 20px;
-  background-color: #f8f9fa; /* Light gray background */
+  background-color: #f0f4f8; /* Soft blue-gray background */
 }
 
 /* List styles */
@@ -20,13 +20,13 @@ ol, ul {
 .status {
   margin-bottom: 20px; /* Increased margin for spacing */
   font-size: 18px; /* Slightly smaller font size */
-  color: #333; /* Dark gray text color */
+  color: #444; /* Dark gray text color */
 }
 
 /* Square styles */
 .square {
-  background: #fff;
-  border: 1px solid #ccc; /* Lighter border color */
+  background: #ffffff; /* White square background */
+  border: 1px solid #d3d3d3; /* Light gray border */
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -43,7 +43,7 @@ ol, ul {
 
 /* Square hover effect */
 .square:hover {
-  background-color: #f0f0f0; /* Light gray background on hover */
+  background-color: #e6e6e6; /* Light gray background on hover */
   transform: translateY(-2px); /* Lift the square slightly on hover */
 }
 
@@ -54,12 +54,12 @@ ol, ul {
 
 /* Keyboard navigation focus style */
 .kbd-navigation .square:focus {
-  background: #ddd;
+  background: #cccccc; /* Slightly darker gray for keyboard navigation focus */
 }
 
 /* Game container styles */
 .game-container {
-  background-color: #fff;
+  background-color: #ffffff; /* White game container background */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -70,9 +70,9 @@ ol, ul {
 
 /* Game title styles */
 .game-title {
-  font-size: 24px;
+  font-size: 28px; /* Slightly larger font size for title */
   font-weight: bold;
-  color: #333;
+  color: #333333; /* Dark gray title color */
   margin-bottom: 20px;
 }
 
