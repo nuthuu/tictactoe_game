@@ -1,51 +1,82 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  
+  font-family: "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* List styles */
+ol, ul {
+  padding-left: 30px;
+}
+
+/* Clearfix for board row */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Status */
+.status {
+  margin-bottom: 20px; /* Increased margin for spacing */
+  font-size: 18px; /* Slightly smaller font size */
+  color: #333; /* Dark gray text color */
+}
+
+/* Square styles */
+.square {
+  background: #fff;
+  border: 1px solid #ccc; /* Lighter border color */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Square hover effect */
+.square:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  transform: translateY(-2px); /* Lift the square slightly on hover */
+}
+
+/* Square focus styles */
+.square:focus {
+  outline: none;
+}
+
+/* Keyboard navigation focus style */
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+/* Game container styles */
+.game-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+}
+
+/* Game title styles */
+.game-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Game info styles */
+.game-info {
+  margin-left: 20px;
+}
